@@ -11,16 +11,16 @@ import h from "../assests/mongodb.png"
 
 function Skill() {
   const row1 = [
-    {img: a,t:1 },
-    {img: b, t: 2 },
-    { img: c, t:3},
-    {img: d,t: 4},
-   
+    { img: a, t: 1 },
+    { img: b, t: 2 },
+    { img: c, t: 3 },
+    { img: d, t: 4 },
+
     { img: g, t: 6 },
     { img: f, t: 7 },
     { img: h, t: 8 },
-    
-    
+
+
 
   ];
 
@@ -35,22 +35,30 @@ function Skill() {
 
   return (
     <AppContainer id='skill'>
-      
+
       <Wrapper>
-        <Text>With Great Outcomes.</Text>
-        <Note>Our customers have gotten offers from awesome companies.</Note>
+        <Text id = "txt">With Great Outcomes.</Text>
+        <Note>Proficient in C++ for DSA, ensuring efficient code.</Note>
+        <Note>Full-stack developer skilled in both frontend and backend.</Note>
+        <Note>Codeforces expert with a consistent high rating.</Note>
+        <Note>LeetCode rating of 1800+, showcasing strong problem-solving.</Note>
+        <Note>Strong grasp of computer fundamentals.</Note>
+        <Note>Proficient in SQL and DBMS for effective data management.</Note>
+        <Note>Integrates frontend and backend for cohesive applications.</Note>
+        <Note>Collaborative team contributor with a competitive coding edge.</Note>
+       
         <Marquee>
           <MarqueeGroup>
-            {row1.map(( el) => (
-              <ImageGroup>
-                <Image key={ el.t} src={el.img} alt="prakash" />
+            {row1.map((el, index) => (
+              <ImageGroup >
+                <Image key={index} src={el.img} alt="prakash" />
               </ImageGroup>
             ))}
           </MarqueeGroup>
           <MarqueeGroup>
-            {row1.map((el) => (
-              <ImageGroup>
-                <Image key={el.t} src={el.img} alt="prakash" />
+            {row1.map((el, index) => (
+              <ImageGroup >
+                <Image key={index} src={el.img} alt="prakash" />
               </ImageGroup>
             ))}
           </MarqueeGroup>
