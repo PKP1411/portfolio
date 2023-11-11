@@ -1,6 +1,6 @@
   #skill {
-      width: 100%;
-        height: 100vh;
+        width: 100%;
+        height:110vh;
         padding: 8rem $p;
       
         >h2 {
@@ -10,6 +10,14 @@
           padding: 0.5rem;
           margin: auto;
         }
+        >Wrapper {
+          >Marquee{
+            background-color: aqua;
+            >MarqueeGroup{
+               background-color: aqua;
+            }
+          }
+        } 
   }
 
   #txt{

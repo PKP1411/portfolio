@@ -1,18 +1,16 @@
-
- 
-
 @media screen and (max-width: 1367px) {
-  nav{
+  nav {
     padding: 0 $p_md;
   }
 
   #home {
-    height: 100vh;
-    > section {
+    height: 70vh;
+    >section {
       &:first-of-type {
         padding-left: $p_md;
-        > div aside {
-          width: 85%;
+
+        >div aside {
+          width: 100%;
         }
       }
     }
@@ -21,19 +19,23 @@
   #work {
     padding: 8rem $p_md;
     height: 110vh;
-    > section {
-      > article {
+
+    >section {
+      >article {
         height: 20rem;
         width: 90%;
       }
+
       .workItem {
         padding: 2rem;
         height: 20rem;
-        > aside {
-          > p {
+
+        >aside {
+          >p {
             margin: 1rem;
           }
-          > a {
+
+          >a {
             margin: 1rem;
           }
         }
@@ -43,20 +45,24 @@
 
   #experience {
     padding: $p_md;
-    > section {
+
+    >section {
       height: 90%;
     }
   }
+
   #testimonial {
     padding: $p_md;
-    > section {
+
+    >section {
       width: 100%;
     }
   }
 
-  #contact > section > form {
-    > input,
-    > button {
+  #contact>section>form {
+
+    >input,
+    >button {
       font: 400 0.8rem $text1;
       width: 50%;
     }
@@ -69,16 +75,21 @@
 
 @media screen and (max-width: 1100px) {
   nav {
+      #timelen {
+          display: none;
+        }
     padding: 0 $p_base;
   }
 
   #home {
     height: 110vh;
-    > section {
+
+    >section {
       &:first-of-type {
         padding-left: $p_base;
-        > div {
-          > h1 {
+
+        >div {
+          >h1 {
             font: 900 3rem $text1;
           }
 
@@ -102,27 +113,32 @@
 
 @media screen and (max-width: 900px) {
   nav {
-    margin-left: 3rem;
+ 
+     
     padding: 0 $p_sm;
-    > h2 {
+    >h2 {
       font-size: 1.8rem;
     }
-    > div {
+
+    >div {
       gap: 1rem;
     }
   }
 
   #home {
     width: 100%;
-    margin-left: 3rem;
-    > section {
+
+    // margin-left: 3rem;
+    >section {
       &:first-of-type {
         padding-left: $p_sm;
-        > div {
-          > div {
+
+        >div {
+          >div {
             gap: 2rem;
             width: 100%;
           }
+
           aside {
             flex-direction: column;
           }
@@ -133,12 +149,13 @@
 
   #work {
     padding: 8rem $p_zero;
-    margin-left: 3rem;
+    // margin-left: 3rem;
 
-    > section {
-      > article {
+    >section {
+      >article {
         height: 25rem;
       }
+
       .workItem {
         height: 25rem;
       }
@@ -147,50 +164,66 @@
 
   #experience {
     padding: $p_sm_inverse;
-    margin-left: 3rem;
+    // margin-left: 3rem;
     height: 90vh;
   }
+
   #testimonial {
     padding: $p_zero;
-    > h2 {
+
+    >h2 {
       padding: 3rem;
       margin-bottom: 0%;
     }
-    > section {
+
+    >section {
       padding: 3rem;
       height: 45rem;
       justify-content: space-evenly;
 
-      > article {
+      >article {
         width: 40%;
         height: 50%;
       }
     }
   }
 
-  #contact > section > form {
-    > h2 {
+  #contact>section>form {
+    >h2 {
       font: 100 2.3rem $text2;
     }
-    > input,
-    > button {
+
+    >input,
+    >button {
       width: 65%;
     }
   }
 
-  footer {
-    margin-left: 3rem;
-    padding-left: $p_zero;
+  #skill {
+    // padding: $p_sm_inverse;
+    margin-top: 5rem;
+
+    #txt {
+      margin-bottom: 3rem;
+    }
+  }
+
+  #footer {
+    // margin-left: 3rem;
+    // padding-left: $p_zero;
     grid-template-columns: 1fr;
-    > div {
+
+    >div {
       width: 100%;
       border: none;
+
       p {
         width: 50%;
         margin: 2rem auto;
       }
     }
-    > a {
+
+    >a {
       margin: 1rem;
     }
   }
@@ -198,39 +231,50 @@
 
 @media screen and (max-width: 786px) {
   nav {
-    > div,
-    > a {
+    >div {
       display: none;
     }
   }
+
   .navBtn {
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+      >a {
+        display: none;
+      }
+
+    }
   #home {
     height: unset;
-    margin-left: 7rem;
+    width: 100%;
+
     margin-top: 3rem;
     flex-direction: column-reverse;
 
-    > section {
+    >section {
       &:first-of-type {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
 
-        > div {
+        >div {
           border: none;
           padding-top: 3rem;
-          > h1 {
+
+          >h1 {
             font: 900 2.5rem $text1;
           }
-          > div {
+
+          >div {
             flex-direction: column;
           }
+
           aside {
             align-items: center;
           }
@@ -240,6 +284,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             span {
               display: block;
               width: 70%;
@@ -250,6 +295,7 @@
           article {
             width: 100%;
             text-align: center;
+
             &::after {
               top: 0;
               left: 0%;
@@ -263,37 +309,40 @@
       }
     }
 
-    > svg {
+    >svg {
       font-size: 2rem;
       bottom: 12%;
     }
   }
 
   #work {
-    margin-left: 7rem;
-    > section {
-      > article {
+
+    >section {
+
+      >article {
         width: 100%;
         height: 30vmax;
       }
+
       .workItem {
         height: 30vmax;
         box-shadow: 0 0 5px $color1;
-        > aside {
+
+        >aside {
           padding: 1rem;
 
-          > h3 {
+          >h3 {
             margin: 1rem;
           }
 
-          > p {
+          >p {
             letter-spacing: 0;
             line-height: unset;
             margin: 0%;
             font-size: 0.75rem;
           }
 
-          > a {
+          >a {
             padding: 0.4rem 0.7rem;
             font-size: 0.7rem;
             margin: 1rem;
@@ -304,10 +353,28 @@
   }
 
   #timeline {
-    margin-left: 7rem;
+
+    // margin-left: 7rem;
     .timelineBox::after {
       left: 31px;
     }
+
+         .timelineItem {
+           padding: 1rem 3rem;
+           position: relative;
+           background-color: inherit;
+           width: 50%;
+    
+           &:nth-child(odd) {
+            text-align: left;
+    
+            
+           }
+    
+           
+      }
+
+    
 
     .timelineItem {
       width: 100%;
@@ -318,6 +385,7 @@
     .rightTimeline {
       left: 0%;
     }
+
     .leftTimeline,
     .rightTimeline {
       &::after {
@@ -327,11 +395,13 @@
   }
 
   #experience {
-    margin-left: 7rem;
-    > section {
+
+    // margin-left: 7rem;
+    >section {
       margin: 3rem 0;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
+
       .serviceBox1 {
         grid-column: 1/3;
         grid-row: unset;
@@ -342,28 +412,24 @@
       }
     }
   }
-  #testimonial > section {
-    height: unset;
-    gap: 3rem;
-    > article {
-      width: 100%;
-      height: 100vw;
-    }
-  }
+
 
   #contact {
-    // align-items: center;
-    margin-left: 7rem;
+    align-items: center;
+    // margin-left: 7rem;
     grid-template-columns: 1fr;
-    > aside {
+
+    >aside {
       display: none;
     }
   }
-  #skill{
+
+  #skill {
     // align-items: center;
     margin-top: 5rem;
-    #txt{
-       margin-bottom: 3rem;
+
+    #txt {
+      margin-bottom: 3rem;
     }
   }
 }

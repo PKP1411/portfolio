@@ -2,29 +2,20 @@ import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 // import resume from '../assests/'
 
-const Header = ({ menuOpen, setMenuOpen }) => {
+const Header = () => {
   return (
     <>
       <nav>
-        <NavContent setMenuOpen={setMenuOpen} />
+        <NavContent  />
       </nav>
 
-      {/* <button className="navBtn" onClick={() => setMenuOpen(!menuOpen)}>
-        <AiOutlineMenu />
-      </button> */}
     </>
   );
 };
 
-export const HeaderPhone = ({ menuOpen, setMenuOpen }) => {
-  return (
-    <div className={`navPhone ${menuOpen ? "navPhoneComes" : ""}`}>
-      <NavContent setMenuOpen={setMenuOpen} />
-    </div>
-  );
-};
 
-const NavContent = ({ setMenuOpen }) => (
+
+const NavContent = () => (
   <>
     <h2>Prakash Kumar</h2>
     <div>
@@ -34,7 +25,10 @@ const NavContent = ({ setMenuOpen }) => (
       <a  href="#work">
         Work
       </a>
-      <a  href="#timeline">
+      <a id = "timelen" href="#timeline">
+        Timeline
+      </a>
+      <a  href="#experience">
         Experience
       </a>
       <a  href="#skill">

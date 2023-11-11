@@ -63,22 +63,7 @@ function Skill() {
             ))}
           </MarqueeGroup>
         </Marquee>
-        {/* <Marquee>
-          <MarqueeGroup2>
-            {row2.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup2>
-          <MarqueeGroup2>
-            {row2.map((el) => (
-              <ImageGroup>
-                <Image src={el} />
-              </ImageGroup>
-            ))}
-          </MarqueeGroup2>
-        </Marquee> */}
+        
       </Wrapper>
     </AppContainer>
   );
@@ -123,7 +108,7 @@ const Note = styled.div`
 
 const Marquee = styled.div`
   display: flex;
-  width: 1200px;
+  width: 100%;
   overflow: hidden;
   user-select: none;
 
@@ -151,7 +136,7 @@ const common = css`
   align-items: center;
   justify-content: space-around;
   white-space: nowrap;
-  width: 100%;
+  width: 1200px;
   animation: ${scrollX} 15s linear infinite;
 `;
 
