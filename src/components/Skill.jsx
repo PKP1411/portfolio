@@ -37,7 +37,7 @@ function Skill() {
     <AppContainer id='skill'>
 
       <Wrapper>
-        <Text id = "txt">With Great Outcomes.</Text>
+        <Text id = "txt">Skills.</Text>
         <Note>Proficient in C++ for DSA, ensuring efficient code.</Note>
         <Note>Full-stack developer skilled in both frontend and backend.</Note>
         <Note>Codeforces expert with a consistent high rating.</Note>
